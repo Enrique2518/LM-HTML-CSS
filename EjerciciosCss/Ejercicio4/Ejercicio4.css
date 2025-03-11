@@ -1,0 +1,39 @@
+/* Estilo para el elemento con id "divEsquerra" (div de la izquierda) */
+#divEsquerra {
+    background-color: gray; /* Establece el color de fondo del contenedor a gris */
+    border: 2px dotted black; /* Establece un borde de 2 píxeles, estilo punteado y color negro */
+    width: 33%; /* El contenedor ocupa el 33% del ancho de su contenedor padre */
+    float: left; /* Hace que el contenedor flote hacia la izquierda */
+    border: 1px dotted black; /* Elimina la anterior propiedad de borde (de 2px) y pone un borde de 1px (lo sobrescribe) */
+    padding: 0 20px 0 20px; /* Añade un relleno de 20 píxeles en los lados izquierdo y derecho del contenedor */
+}
+
+/* Estilo para el elemento con id "divDreta" (div de la derecha) */
+#divDreta {
+    background-color: gray; /* Establece el color de fondo del contenedor a gris */
+    border: 2px dotted black; /* Establece un borde de 2 píxeles, estilo punteado y color negro */
+    width: 33%; /* El contenedor ocupa el 33% del ancho de su contenedor padre */
+    float: right; /* Hace que el contenedor flote hacia la derecha */
+    text-align: right; /* Alinea el texto dentro del contenedor a la derecha */
+    border: 1px dotted black; /* Elimina el borde de 2px y pone un borde de 1px (lo sobrescribe) */
+    padding: 0 20px 0 20px; /* Añade un relleno de 20 píxeles en los lados izquierdo y derecho del contenedor */
+}
+
+/* Estilo para el elemento con id "divCentral" (div central) */
+#divCentral {
+    text-align: end; /* Alinea el texto del contenedor al final (en este caso, a la derecha por defecto) */
+    align-items: center; /* Centra los ítems en el eje transversal (aunque no tiene mucho efecto sin un display flex) */
+    padding: 250px; /* Añade un relleno de 250 píxeles en todos los lados del contenedor */
+}
+
+/* Estilo para el elemento <footer> (pie de página) */
+footer {
+    background-color: gray; /* Establece el color de fondo del pie de página a gris */
+    color: white; /* Establece el color del texto a blanco */
+    text-align: center; /* Centra el texto dentro del pie de página */
+    padding: 10px; /* Añade un relleno de 10 píxeles alrededor del pie de página */
+    position: fixed; /* Hace que el pie de página esté fijado en la parte inferior de la ventana del navegador */
+    width: 100%; /* Establece el pie de página para que ocupe todo el ancho de la ventana */
+    bottom: 0; /* Coloca el pie de página en la parte inferior de la ventana */
+    left: 0; /* Alinea el pie de página al borde izquierdo de la ventana */
+}

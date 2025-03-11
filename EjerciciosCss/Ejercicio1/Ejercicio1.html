@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Especifica que el conjunto de caracteres es UTF-8, que cubre la mayoría de los caracteres de los idiomas modernos -->
+    <meta name="viewport" content="Introdueix les teves dades per continuar amb el registre."> <!-- Esto está incorrecto. Debería ser: content="width=device-width, initial-scale=1.0" para asegurar que la página se adapte a los dispositivos móviles -->
+    <title>Document</title> <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="Ejercicio1.css"> <!-- Enlace a la hoja de estilos externa para aplicar los estilos CSS a la página -->
+</head>
+<body>
+
+    <header>
+        <!-- Sección de encabezado donde se muestra el título y una pequeña descripción -->
+        <h1>Registro</h1> <!-- Título principal de la página -->
+        <p>Introdueix les teves dades per continuar amb el registre.</p> <!-- Descripción debajo del título -->
+    </header>
+
+    <main>
+        <!-- Sección principal de la página donde se encuentra el formulario de registro -->
+
+        <form action="post"> <!-- El formulario de envío, pero el atributo 'action' no está especificado correctamente. 'post' debería ser una URL o 'method="post"' para enviar datos -->
+            
+            <fieldset> <!-- Agrupa los elementos dentro del formulario -->
+                <legend>Inscribirte</legend> <!-- Título de la sección dentro del formulario -->
+                
+                <!-- Primer campo del formulario: Nombre -->
+                <div>
+                    <label>Nom:</label> <!-- Etiqueta que describe el campo -->
+                    <input type="text" name="name" id="name" required> <!-- Campo de texto para ingresar el nombre, obligatorio -->
+                </div>
+
+                <!-- Segundo campo del formulario: Edad -->
+                <div>
+                    <label>Edat:</label> <!-- Etiqueta para el campo de edad -->
+                    <input type="number" name="age" id="age" min="18" required> <!-- Campo para ingresar la edad, con un valor mínimo de 18 años -->
+                </div>
+
+                <!-- Tercer campo del formulario: Correo electrónico -->
+                <div>
+                    <label>Email:</label> <!-- Etiqueta para el campo de correo -->
+                    <input type="email" name="email" id="email" required> <!-- Campo para ingresar un correo electrónico -->
+                </div>
+
+                <!-- Cuarto campo del formulario: Contraseña -->
+                <div>
+                    <label>Contraseña:</label> <!-- Etiqueta para el campo de contraseña -->
+                    <input type="password" name="password" id="password" maxlength="12" minlength="6" required> <!-- Campo de contraseña, con límite de caracteres entre 6 y 12 -->
+                </div>
+
+                <!-- Quinto campo del formulario: Consola favorita -->
+                <div>
+                    <label>Consola favorita: </label> <!-- Etiqueta para seleccionar la consola favorita -->
+                    <select name="favorteConsol" id="favorteConsol" multiple="6" required> <!-- Lista desplegable para seleccionar múltiples consolas -->
+                        <option value="Nintendo">Nintendo Switch</option>
+                        <option value="PS5">PS5</option>
+                        <option value="XBOXX">XBOX X</option>
+                        <option value="XBOXS">XBOX S</option>
+                        <option value="steamDeck">Steam Deck</option>
+                        <option value="Altres">Altres</option>
+                    </select>
+                </div>
+
+                <!-- Sexto campo del formulario: Comentarios -->
+                <div>
+                    <label>Comentario:</label> <!-- Etiqueta para el campo de comentario -->
+                    <textarea name="comments" id="comments" cols="50" rows="7"></textarea> <!-- Campo de texto para ingresar un comentario, con tamaño de 50 columnas y 7 filas -->
+                </div>
+
+                <!-- Séptimo campo del formulario: Checkbox para suscripción -->
+                <div>
+                    <label>Subscribirte para recibir informacion?</label> <!-- Etiqueta para el campo de suscripción -->
+                    <input type="checkbox" name="subs" id="subs"> <!-- Checkbox para seleccionar si se desea recibir información -->
+                </div>
+
+                <!-- Botón de envío del formulario -->
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+
+    </main>
+
+    <footer>
+        <!-- Sección de pie de página con información adicional -->
+        <p>La meva pàgina de Videojocs. Tots els drets reservats.</p> <!-- Texto de derechos reservados -->
+    </footer>
+
+</body>
+</html>

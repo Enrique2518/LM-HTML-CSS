@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- Estilos internos de la página, en un futuro se pueden mover a un archivo CSS externo -->
+    <style>
+        /* Estilo para el cuerpo de la página */
+        body{
+        max-width: 600px; /* Establece un ancho máximo para el cuerpo de la página */
+        }
+        /* Estilo para los formularios */
+        form {
+        display: flex; /* Utiliza un layout flexible */
+        flex-direction: column; /* Los elementos se alinean de manera vertical */
+        gap: 10px; /* Espacio entre los elementos del formulario */
+        max-width : 300px; /* Establece el ancho máximo del formulario */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Título principal de la página -->
+    <h1>El nostre examen de HTML</h1>
+
+    <!-- Barra de navegación para saltar entre secciones -->
+    <nav>
+        <a href="#seccion1">Introduccion</a>
+        <a href="#seccion2">Formulario</a>
+        <a href="#seccion3">Finalizacion</a>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+        <!-- Sección 1 de contenido -->
+        <section id="seccion1">
+            <h2>Introduccion</h2>
+            <!-- Texto introductorio sobre el examen -->
+            <p>Aquest és el primer examen de l'assignatura Llenguatges de marques i sistemes de gestió de la
+                informació. Realitzarem únicament l'HTML i incorporarem els estils donats, però NO
+                afegirem cap estil que no s'hagi lliurat. Aquesta part valdrà un 60% de la nota.</p>
+        </section>
+
+        <!-- Sección 2 del formulario -->
+        <section id="seccion2">
+            <h2>Formulario</h2>
+            <!-- Formulario de inscripción -->
+            <form action="">
+                <!-- Campo para ingresar el nombre de la asignatura -->
+                <label for="Asignatura">Asignatura</label>
+                <input type="text" name="Asignatura" id="Asignatura" required>
+
+                <!-- Campo para ingresar el nombre del alumno -->
+                <label for="Name">Nombre alumno/a: </label>
+                <input type="text" name="Name" id="Name" required>
+
+                <!-- Campo para ingresar el correo electrónico -->
+                <label for="email">Correo electronico: </label>
+                <input type="email" name="email" id="email" required>
+
+                <!-- Selección de actividades entregadas -->
+                <select name="ActivitatsLliurades" id="ActivitatsLliurades" multiple>
+                    <option value="0">Cap</option>
+                    <option value="1">Actividad 1</option>
+                    <option value="2">Actividad 2</option>
+                    <option value="3">Actividad 3</option>
+                    <option value="4">Actividad 4</option>
+                </select>
+
+                <!-- Campo para ingresar la nota del alumno -->
+                <label for="nota">Nota: </label>
+                <input type="number" name="nota" id="nota" max="10" min="0" required>
+
+                <!-- Campo para ingresar un comentario -->
+                <label for="comentario">Comentario: </label>
+                <textarea name="comentario" id="comentario" cols="40" rows="6"></textarea>
+
+                <!-- Botón para enviar el formulario -->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <!-- Sección 3 de finalización -->
+        <section id="seccion3">
+            <h2>Finalizacion</h2>
+            <!-- Texto de cierre sobre la corrección del examen -->
+            <p>Un cop
+                finalitzades les dues parts lliurables de l'examen, es corregirà i lliurarà la nota via
+                Gestib, el més ràpid possible. Molta sort!</p>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con información de contacto -->
+    <footer>
+        <p>© 2024 El nostre examen d'HTML | Contacte:<address>emunoztorrero@nigul.cide.es</address>.</p>
+    </footer>
+
+</body>
+</html>

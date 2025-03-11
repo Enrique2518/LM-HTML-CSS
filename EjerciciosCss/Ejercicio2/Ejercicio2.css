@@ -1,0 +1,29 @@
+table, caption {
+    border: 1px solid darkblue; /* Aplica un borde de 1px, color azul oscuro a la tabla y al caption */
+    align-items: center; /* Aplica a los elementos dentro de la tabla, aunque 'align-items' normalmente se usa en un contenedor con display:flex, lo que puede no tener efecto aquí en una tabla */
+    text-align: center; /* Alinea el texto al centro en la tabla y en el caption */
+}
+
+thead, tfoot {
+    background-color: brown; /* El fondo de las filas de encabezado (thead) y pie de página (tfoot) será marrón */
+    color: white; /* El texto dentro de las filas de encabezado y pie será blanco */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+td:last-child {
+    font-weight: bold; /* La última celda de cada fila (td:last-child) será en negrita */
+}
+
+.par {
+    color: blue; /* Establece el color del texto de las filas con la clase 'par' a azul */
+    background-color: white; /* Establece el fondo de las filas con la clase 'par' a blanco */
+}
+
+.impar {
+    color: white; /* Establece el color del texto de las filas con la clase 'impar' a blanco */
+    background-color: blue; /* Establece el fondo de las filas con la clase 'impar' a azul */
+}
+
+caption::selection {
+    color: blueviolet; /* Cambia el color del texto seleccionado dentro del <caption> a 'blueviolet' */
+}

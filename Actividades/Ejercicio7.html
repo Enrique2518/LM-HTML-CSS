@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Título principal de la página -->
+    <h1>Registro</h1>
+
+    <!-- Formulario para el registro de usuario -->
+    <form action="post">
+
+        <!-- Usamos fieldset para agrupar los elementos del formulario -->
+        <fieldset>
+
+            <!-- Leyenda para describir la sección del formulario -->
+            <legend>Inscribirte</legend>
+    
+            <!-- Campo de texto para el nombre del usuario -->
+            <p>Nom: <input type="text" name="name" id="name" required></p>
+    
+            <!-- Campo de número para la edad, con un mínimo de 18 años -->
+            <p>Edat: <input type="number" name="age" id="age" min="18" required></p>
+    
+            <!-- Campo de correo electrónico, con validación para ingresar un formato correcto -->
+            <p>Email: <input type="email" name="email" id="email" required></p>
+    
+            <!-- Campo de contraseña, con longitud mínima y máxima especificada -->
+            <p>Contraseña: <input type="password" name="password" id="password" maxlength="12" minlength="6" required></p>
+            
+            <!-- Selección de consola favorita con múltiples opciones seleccionables -->
+            <p>Consola favorita: </p>
+            <select name="favorteConsol" id="favorteConsol" multiple="6">
+                <!-- Opciones para seleccionar consola favorita -->
+                <option value="Nintendo">Nintendo Switch</option>
+                <option value="PS5">PS5</option>
+                <option value="XBOXX">XBOX X</option>
+                <option value="XBOXS">XBOX S</option>
+                <option value="steamDeck">Steam Deck</option>
+                <option value="Altres">Altres</option>
+            </select>
+    
+            <!-- Checkbox para la opción de suscripción al boletín -->
+            <p>Subscribirte para recibir informacion? <input type="checkbox" name="subs" id="subs"></p>
+    
+            <!-- Área de texto para que el usuario pueda dejar un comentario -->
+            <p>Comentario:</p>
+            <textarea name="comments" id="comments" cols="50" rows="7"></textarea>
+    
+            <br>
+            <br>
+    
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+    
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>

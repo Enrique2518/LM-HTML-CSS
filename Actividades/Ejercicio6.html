@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+    <!-- Creamos unos estilos para la pagina en el head, mas adelante crearemos estos estilos en un fichero externo -->
+    <style>
+        caption, table, td, th{
+            text-align: center;
+            vertical-align: middle;
+            border: 1px dotted lightblue;
+        }
+        td{
+            background-color: #E1EFE1;
+        }
+        th{
+            background-color: #2D8937;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Creamos una tabla que contiene diferentes tipos de inputs -->
+    <table>
+
+        <!-- Fila de cabecera con los títulos de cada columna -->
+        <tr>
+            <th>Tipo</th>
+            <th>Descripcion</th>
+            <th>Representacion</th>
+        </tr>
+
+        <!-- Fila que contiene un botón de acción -->
+        <tr>
+            <td>Boton</td>
+            <td>Boton de accion</td>
+            <!-- Input de tipo botón -->
+            <td><input type="button" value="boton"></td>
+        </tr>
+
+        <!-- Fila que contiene un checkbox -->
+        <tr>
+            <td>checkbox</td>
+            <td>Casilla para seleccionar un elemento </td>
+            <!-- Input de tipo checkbox -->
+            <td><input type="checkbox" name="" id=""></td>
+        </tr>
+
+        <!-- Fila que contiene un selector de color -->
+        <tr>
+            <td>color</td>
+            <td>color</td>
+            <!-- Input de tipo color para seleccionar un color -->
+            <td><input type="color" name="color" id="color"></td>
+        </tr>
+
+        <!-- Fila que contiene un selector de fecha -->
+        <tr>
+            <td>date</td>
+            <td>date</td>
+            <!-- Input de tipo date para seleccionar una fecha -->
+            <td><input type="date" name="date" id="date"></td>
+        </tr>
+
+        <!-- Fila que contiene un selector de fecha y hora -->
+        <tr>
+            <td>datetime-local</td>
+            <td>datetime-local</td>
+            <!-- Input de tipo datetime-local para seleccionar fecha y hora -->
+            <td><input type="datetime-local" name="datetime-local" id="datetime-local"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para email -->
+        <tr>
+            <td>email</td>
+            <td>email</td>
+            <!-- Input de tipo email para ingresar un correo electrónico -->
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para cargar archivos -->
+        <tr>
+            <td>file</td>
+            <td>file</td>
+            <!-- Input de tipo file para cargar archivos -->
+            <td><input type="file" name="" id=""></td>
+        </tr>
+
+        <!-- Fila que contiene un input oculto -->
+        <tr>
+            <td>hidden</td>
+            <td>hidden</td>
+            <!-- Input de tipo hidden, no visible al usuario -->
+            <td><input type="hidden"></td>
+        </tr>
+
+        <!-- Fila que contiene una imagen como botón -->
+        <tr>
+            <td>image</td>
+            <td>image</td>
+            <!-- Input de tipo image, que muestra una imagen como botón -->
+            <td><input type="image" src="/Actividad3/Pa/pa.png" alt="" width="50px" height="50px"></td>
+        </tr>
+
+        <!-- Fila que contiene un selector de mes -->
+        <tr>
+            <td>month</td>
+            <td>month</td>
+            <!-- Input de tipo month para seleccionar un mes -->
+            <td><input type="month"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para ingresar números -->
+        <tr>
+            <td>number</td>
+            <td>number</td>
+            <!-- Input de tipo number para ingresar un número -->
+            <td><input type="number"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para contraseña -->
+        <tr>
+            <td>password</td>
+            <td>password</td>
+            <!-- Input de tipo password para ingresar una contraseña -->
+            <td><input type="password" name="password" id="password"></td>
+        </tr>
+
+        <!-- Fila que contiene botones de tipo radio -->
+        <tr>
+            <td>radio</td>
+            <td>radio</td>
+            <!-- Inputs de tipo radio para seleccionar entre varias opciones -->
+            <td><input type="radio" name="radio" id="radio1"><input type="radio" name="radio" id="radio2"></td>
+        </tr>
+
+        <!-- Fila que contiene un selector de rango -->
+        <tr>
+            <td>range</td>
+            <td>range</td>
+            <!-- Input de tipo range para seleccionar un valor dentro de un rango -->
+            <td><input type="range" name="" id=""></td>
+        </tr>
+
+        <!-- Fila que contiene un botón de reset -->
+        <tr>
+            <td>reset</td>
+            <td>reset</td>
+            <!-- Input de tipo reset para resetear el formulario -->
+            <td><input type="reset" value="reset"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para realizar búsquedas -->
+        <tr>
+            <td>search</td>
+            <td>text per fer una cerca té el mateix comportament del tipus text, però permet establir una diferenciació per fer un tractament diferent.</td>
+            <!-- Input de tipo search para realizar búsquedas -->
+            <td><input type="search"></td>
+        </tr>
+
+        <!-- Fila que contiene un botón de tipo submit -->
+        <tr>
+            <td>submit</td>
+            <td>Verifica i envia les dades del formulari a la destinació indicada a l'atribut action d'aquest.</td>
+            <!-- Input de tipo submit para enviar el formulario -->
+            <td><input type="submit" name="Boton submit" id="Boton submit"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para teléfono -->
+        <tr>
+            <td>tel</td>
+            <td>Numero de telefono</td>
+            <!-- Input de tipo tel para ingresar un número de teléfono -->
+            <td><input type="tel"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para texto libre -->
+        <tr>
+            <td>text</td>
+            <td>texto libre</td>
+            <!-- Input de tipo text para ingresar texto libre -->
+            <td><input type="text" name="texto" id="texto"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para seleccionar una hora -->
+        <tr>
+            <td>time</td>
+            <td>hora</td>
+            <!-- Input de tipo time para seleccionar una hora -->
+            <td><input type="time"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para ingresar una URL -->
+        <tr>
+            <td>url</td>
+            <td>URL</td>
+            <!-- Input de tipo url para ingresar una dirección web -->
+            <td><input type="url" name="url" id="url"></td>
+        </tr>
+
+        <!-- Fila que contiene un input para seleccionar una semana -->
+        <tr>
+            <td>week</td>
+            <td>Año y numero ordinal de la semana</td>
+            <!-- Input de tipo week para seleccionar una semana -->
+            <td><input type="week"></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

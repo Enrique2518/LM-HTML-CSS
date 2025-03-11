@@ -1,0 +1,66 @@
+/* Aplica la misma fuente a todos los elementos del documento */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Establece una fuente sans-serif por defecto para todo el texto */
+}
+
+/* Estilo para el cuerpo de la página */
+body{
+    background-color: #efeff0; /* Establece un color de fondo gris claro para el cuerpo */
+}
+
+/* Estilo para los elementos <label> */
+label{
+    color: #696969; /* Color gris oscuro para el texto de las etiquetas */
+    display: block; /* Asegura que las etiquetas ocupen toda la línea disponible */
+    margin-bottom: 5px; /* Añade un pequeño espacio debajo de las etiquetas */
+}
+
+/* Estilo para los elementos <input> */
+input{
+    width: 200px; /* Establece un ancho fijo de 200 píxeles para los campos de entrada */
+}
+
+/* Estilo para los elementos <div> */
+div{
+    margin: 5px; /* Añade un espacio de 5 píxeles alrededor de los divs */
+}
+
+/* Estilo para la etiqueta <main> */
+main{
+    background-color: #b0f3f8; /* Establece un fondo azul claro para la sección principal */
+}
+
+/* Estilo para el elemento <textarea> */
+textarea{
+    background-color: lightpink; /* Establece un fondo color rosa claro para los campos de texto */
+}
+
+/* Estilo específico para los párrafos dentro del header */
+header p{
+    height: 50px; /* Define una altura fija de 50 píxeles para los párrafos dentro del header */
+    text-align: center; /* Centra el texto dentro del párrafo */
+    align-content: center; /* Alinea el contenido de manera centrada */
+    background: linear-gradient(to right, lightpink, aquamarine); /* Aplica un fondo con un degradado de rosa claro a azul aquamarine */
+}
+
+/* Estilo para elementos con el atributo [min] */
+[min]{
+    background-color: lightgoldenrodyellow; /* Aplica un fondo amarillo claro a los elementos con el atributo "min" */
+}
+
+/* Estilo para los elementos <select> con el atributo "required" */
+select[required]{
+    background-color: aquamarine; /* Aplica un fondo color aquamarine a los select con atributo "required" */
+    width: 110px; /* Establece un ancho fijo de 110 píxeles para los elementos <select> */
+}
+
+/* Estilo para los campos de texto (type="text") */
+[type="text"]{
+    background-color: mistyrose; /* Aplica un fondo color rosado pálido a los campos de texto */
+}
+
+/* Estilo para los botones de tipo "submit" */
+[type="submit"]{
+    background-color: navy; /* Establece un fondo color azul marino para los botones de envío */
+    color: white; /* Establece el color del texto en blanco */
+}

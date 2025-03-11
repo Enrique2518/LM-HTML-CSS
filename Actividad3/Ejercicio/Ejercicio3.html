@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Creamos unos estilos para la pagina en el head, mas adelante crearemos estos estilos en un fichero externo -->
+    <style>
+        caption, table, td, th {
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <!-- Creamos una tabla -->
+    <table>
+        <!-- Creamos un titulo mas grande para la tabla -->
+        <caption>PRODUCTES</caption>
+        <!-- Creamos un thead donde estaran los titulos de los apartados que vamos a crear en el tbody  -->
+        <thead>
+            
+            <tr>
+                <!-- Creamos las secciones  -->
+                 <!-- Y como podemos observar son th ya que son table head titulos de tabla -->
+                <th>Producte</th>
+                <th>Quantitat</th>
+                <th>Preu</th>
+                <th>Secció</th>
+                <th>Imatge</th>
+                
+            </tr>
+
+        </thead>
+
+        <!-- Creamos el tbody donde estara toda la informacion  -->
+        <tbody>
+            <!-- En el primero creamos la seccion de la manzana -->
+            <tr>
+                <!-- Y aqui podemos observar que son table description -->
+                <td>Pomes</td>
+                <td>5</td>
+                <td>3,5€</td>
+                <td>Fruteria</td>
+                <!-- Imagen del producto: Manzana -->
+                <td><img src="../Pomes/pomes.png" alt="Manzana" height="50px" width="50px"></td>
+            </tr>
+            <!-- En el segundo creamos la seccion de la leche -->
+            <tr>
+                <td>Llet</td>
+                <td>6</td>
+                <td>5,90€</td>
+                <td>Lactis</td>
+                <!-- Imagen del producto: Leche -->
+                <td><img src="../LLet/llet.png" alt="Llet" height="50px" width="50px"></td>
+            </tr>
+            <!-- En el tercero creamos la seccion del pan -->
+            <tr>
+                <td>Pa</td>
+                <td>1</td>
+                <td>1€</td>
+                <td>Forn</td>
+                <!-- Imagen del producto: Pan -->
+                <td><img src="../Pa/pa.png" alt="Pa" height="50px" width="50px"></td>
+            </tr>
+            <!-- En el cuarto creamos la seccion del pollo asado -->
+            <tr>
+                <td>Pollastre sencer</td>
+                <td>3</td>
+                <td>15€</td>
+                <td>Carnisseria</td>
+                <!-- Imagen del producto: Pollo asado -->
+                <td><img src="../Pollastre/pollastre.png" alt="Pollastre" height="50px" width="50px"></td>
+            </tr>
+
+        </tbody>
+        
+    </table>
+
+</body>
+</html>

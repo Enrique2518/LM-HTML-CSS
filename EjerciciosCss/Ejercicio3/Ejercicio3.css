@@ -1,0 +1,28 @@
+/* Estilo para el elemento con el id "padre" */
+#padre {
+    float: right; /* Hace que el elemento flote hacia la derecha */
+}
+
+/* Estilo para cualquier elemento con la clase "contenedor" */
+.contenedor {
+    color: white; /* Establece el color del texto a blanco */
+    width: 30%; /* Establece el ancho del contenedor al 30% del contenedor padre */
+}
+
+/* Estilo para el elemento con el id "contenedor1" */
+#contenedor1 {
+    background-color: red; /* Establece el color de fondo a rojo */
+    float: left; /* Hace que el contenedor flote hacia la izquierda */
+}
+
+/* Estilo para el elemento con el id "contenedor2" */
+#contenedor2 {
+    background-color: blue; /* Establece el color de fondo a azul */
+    float: right; /* Hace que el contenedor flote hacia la derecha */
+}
+
+/* Estilo para el elemento con el id "contenedor3" */
+#contenedor3 {
+    background-color: green; /* Establece el color de fondo a verde */
+    float: none; /* Elimina cualquier flotado (el contenedor no flotará) */
+}
